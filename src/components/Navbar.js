@@ -3,17 +3,17 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import clubLogo from "../assets/club_logo - icon.png";
 import vitLogo from "../assets/VIT Logo.png";
-import FlexRow from "@react-css/flex";
+import Flex from "@react-css/flex";
 
 function Navbar() {
   return (
     <nav className="navbar">
       <h1 className="navbar-logo">
-        <FlexRow>
+        <Flex row>
           <img src={clubLogo} alt="Club Logo" className="navbar-logo" />
           <div className="divider"></div>
           <img src={vitLogo} alt="VIT Bhopal Logo" className="navbar-logo" />
-        </FlexRow>
+        </Flex>
       </h1>
       <ul className="navbar-links">
         <li>

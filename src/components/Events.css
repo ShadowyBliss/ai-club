@@ -1,28 +1,86 @@
 /* src/components/Events.css */
+
+h2 {
+  color: white;
+}
 .events {
-    padding: 50px 20px;
-  }
-  
-  .events h2 {
-    font-size: 2em;
-  }
-  
-  .events-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .event-card {
-    background-color: #f4f4f4;
-    padding: 20px;
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .event-card h3 {
-    font-size: 1.2em;
-  }
-  
+  padding: 50px 20px;
+}
+
+.events h2 {
+  font-size: 2em;
+}
+
+.events-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  font-size: 1.2em;
+}
+
+.card {
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #777;
+  margin: 10px 0 20px;
+}
+
+.card-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #45a049;
+}
