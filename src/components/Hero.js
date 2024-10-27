@@ -3,6 +3,34 @@ import "./Hero.css";
 import { TypeAnimation } from "react-type-animation";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import aiImage from "../assets/club_logo - icon.png";
+
+function Cube() {
+  return (
+    <div className="scene">
+      <div className="cube">
+        <div className="face front">
+          <img src={aiImage} />
+        </div>
+        <div className="face back">
+          <img src={aiImage} />
+        </div>
+        <div className="face right">
+          <img src={aiImage} />
+        </div>
+        <div className="face left">
+          <img src={aiImage} />
+        </div>
+        <div className="face top">
+          <img src={aiImage} />
+        </div>
+        <div className="face bottom">
+          <img src={aiImage} />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Hero() {
   return (
@@ -24,10 +52,8 @@ function Hero() {
           style={{ fontSize: "2em", display: "inline-block" }}
           repeat={Infinity}
         />
-        <p>
-          Join us in exploring the fascinating world of Artificial Intelligence
-          and technology!
-        </p>
+        <Cube />
+
         <div class="main">
           <a href="/Instagram" class="nav-item">
             <div class="nav-links">

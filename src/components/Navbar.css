@@ -23,3 +23,14 @@
   text-decoration: none;
   color: white;
 }
+
+.divider {
+  background-color: white;
+  /* height: 20px;
+  width: 5px; 
+  /* align-self: stretch; */
+  height: auto;
+  width: 1px;
+  margin-left: 5px;
+  margin-right: 10px;
+}

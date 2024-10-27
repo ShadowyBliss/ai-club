@@ -7,10 +7,10 @@ import Flex from "@react-css/flex";
 function Home() {
   return (
     <Flex row>
-      <Flex.Item grow={2}>
+      <Flex.Item className="HalfWidth">
         <img src={aiPerson} alt="AI Person" className="HeroImage" />
       </Flex.Item>
-      <Flex.Item>
+      <Flex.Item className="HalfWidth">
         <Hero />
       </Flex.Item>
     </Flex>
